@@ -1,13 +1,13 @@
-import { Personagem } from "../Interface/Personagem";
+import { Personagem } from "../Personagem";
 
-export class Cammy implements Personagem {
+export class Zangief implements Personagem {
     private nome: string
     private vida: number
     private nacionalidade: string
     private estiloLuta: string
     private usouGolpeEspecial: boolean = false
     constructor() {
-        this.nome = 'Cammy'
+        this.nome = 'Zangief'
         this.vida = 100
         this.nacionalidade = ''
         this.estiloLuta = ''

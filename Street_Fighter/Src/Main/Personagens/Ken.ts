@@ -1,4 +1,4 @@
-import { Personagem } from "../Interface/Personagem";
+import { Personagem } from "../Personagem";
 
 export class Ken implements Personagem {
     private nome: string

@@ -1,4 +1,4 @@
-import { Personagem } from "../Interface/Personagem";
+import { Personagem } from "../Personagem";
 
 export class Blanka implements Personagem {
     private nome: string

@@ -1,13 +1,13 @@
 const ask = require('readline-sync')
-import { Personagem } from "../Interface/Personagem"
-import { Bison } from "../Personagens/Bison"
-import { Blanka } from "../Personagens/Blanka"
-import { Cammy } from "../Personagens/Cammy"
-import { DeeJay } from "../Personagens/Dee_jay"
-import { Honda } from "../Personagens/Honda"
-import { Ken } from "../Personagens/Ken"
-import { Ryu } from "../Personagens/Ryu"
-import { Zangief } from "../Personagens/Zangief"
+import { Personagem } from "./Personagem"
+import { Bison } from "./Personagens/Bison"
+import { Blanka } from "./Personagens/Blanka"
+import { Cammy } from "./Personagens/Cammy"
+import { DeeJay } from "./Personagens/Dee_jay"
+import { Honda } from "./Personagens/Honda"
+import { Ken } from "./Personagens/Ken"
+import { Ryu } from "./Personagens/Ryu"
+import { Zangief } from "./Personagens/Zangief"
 
 // FUNÇAO PARA SELECIONAR OS PERSONAGENS//
 
