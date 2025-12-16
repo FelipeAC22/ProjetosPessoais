@@ -11,7 +11,7 @@ import { Zangief } from "./Personagens/Zangief"
 
 // FUNÇAO PARA SELECIONAR OS PERSONAGENS//
 
-function selecionarPersonagem1(): any {
+function selecionarPersonagem(): any {
     console.clear()
     while (true) {
 
@@ -55,49 +55,6 @@ jogador1 escolha seu personagem:`))
     }
 }
 
-function selecionarPersonagem2(): any {
-    console.clear()
-    while (true) {
-
-        console.log(`
--------------------------JOGADOR2----------------------
-[0] Bison
-[1] Blanka
-[2] Cammy
-[3] Dee jay
-[4] Honda
-[5] Ken
-[6] Ryu
-[7] Zangief
---------------------------------------------------------
-    `)
-
-        let opcao = Number(ask.question(`
-jogador2 escolha seu personagem: `))
-
-        switch (opcao) {
-            case 0:
-                return new Bison()
-            case 1:
-                return new Blanka()
-            case 2:
-                return new Cammy()
-            case 3:
-                return new DeeJay()
-            case 4:
-                return new Honda()
-            case 5:
-                return new Ken()
-            case 6:
-                return new Ryu()
-            case 7:
-                return new Zangief()
-            default:
-                ask.question('Personagem não encontrado, tecle ENTER para voltar')
-                break;
-        }
-    }
-}
 
 // ESCOLHER GOLPE NA BATALHA//
 
@@ -192,11 +149,11 @@ function batalha(jogador1: Personagem, jogador2: Personagem): void {
 
 function main(): void {
     console.log("Bem-vindo ao Street Fighter")
-    let jogador1: Personagem = selecionarPersonagem1()
+    let jogador1: Personagem = selecionarPersonagem()
 
     ask.question("tecle ENTER para continuar: ")
 
-    let jogador2: Personagem = selecionarPersonagem2()
+    let jogador2: Personagem = selecionarPersonagem()
     console.clear()
     console.log(`${jogador1.getNome()} x ${jogador2.getNome()}`)
     ask.question('tecle ENTER para comecar: ')

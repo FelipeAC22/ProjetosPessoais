@@ -12,7 +12,7 @@ function cadastrarNovoDoador() {
     let tipoSanguineo = ask.question('Digite o tipo sanguineo do doador (A +-, B +-, AB +- ou O +-) --> ')
     let dataDaUltimaDoacao = ask.question('Digite o ultimo  dia / mes / ano, em que o paciente fez a doacao --> ')
 
-    let doador = { // cria uma nova varivel com os dados que o usuario deu a armazena dentro do array de doadores //
+    let doador = { // cria um novo objeto com os dados que o usuario deu a armazena dentro do array de doadores //
         nome: nome,
         idade: idade,
         peso: peso + 'kg',
@@ -20,7 +20,7 @@ function cadastrarNovoDoador() {
         dataDaUltimaDoacao: dataDaUltimaDoacao
     }
 
-    doadores.push(doador) // armazena no bancos de dados falso os dados cedidos pelo usuario//
+    doadores.push(doador) // armazena array de dados falso os dados cedidos pelo usuario//
     console.clear()
     console.log(`Doador ${nome} cadastrado!\n`)
 
